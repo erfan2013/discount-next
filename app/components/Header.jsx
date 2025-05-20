@@ -16,7 +16,7 @@ export default function Header() {
         },
     ];
   return (
-    <nav className="py-4 px-14 border-b flex items-center justify-between">
+    <nav className="px-10 border-b flex items-center justify-between">
         <img className="h-20" src="logo.png" alt="logo" />
         <div className="flex gap-4 items-center font-semibold">
             {menulist?.map((item)=>{
