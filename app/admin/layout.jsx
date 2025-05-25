@@ -1,12 +1,11 @@
 "use client";
 
-import Sidebar from "./components/Sidebar";
+import AdminLayout from "./components/AdminLayout";
 
 export default function Layout({ children }) {
   return (
-    <main className="flex">
-      <Sidebar />
-      <section className="flexx-1">{children}</section>
-    </main>
+    <>
+      <AdminLayout>{children}</AdminLayout>
+    </>
   );
 }

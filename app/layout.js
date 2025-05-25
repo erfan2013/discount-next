@@ -3,7 +3,6 @@ import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { Toaster } from "react-hot-toast";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,10 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Toaster />
-        <NextUIProvider>
-      
-          {children}
-          </NextUIProvider>
+        <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>
   );

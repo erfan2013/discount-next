@@ -1,3 +1,5 @@
 export default function Page() {
-    return <main>Page</main>
+  return (
+  <main>Page</main>
+  )
 }

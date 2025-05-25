@@ -1,9 +1,9 @@
-import Layout from "./layout";
+
 
 export default function Page() {
   return (
-    <mian>
+    <main>
       admin
-    </mian>
+    </main>
 )
 }
