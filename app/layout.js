@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { NextUIProvider } from "@nextui-org/react";
+import { NextUIProvider } from "@heroui/react";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({

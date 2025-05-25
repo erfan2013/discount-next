@@ -3,7 +3,7 @@
 
 import { useAuth } from "@/context/authContext";
 import { auth } from "@/lib/firestore/firebase";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
