@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-export default function page() {
+export default function Page() {
   const { user } = useAuth();
   const router = useRouter();
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function page() {
               type="password"
               placeholder="Enter Your password"
               name="user-password"
-              id="user-pasword"
+              id="user-password"
               className="px-3 py-2 rounded-xl border focus:outline-none w-full"
             />
             <Button color="primary">Login</Button>

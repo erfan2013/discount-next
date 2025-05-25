@@ -3,6 +3,7 @@ import { auth } from "@/lib/firestore/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
 
+
 const AuthContext = createContext({});
 
 export default function AuthContextProvider({ children }) {
