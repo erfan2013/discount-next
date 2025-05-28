@@ -1,7 +1,6 @@
 "use client";
 
-
-import { useAuth } from "@/context/authContext";
+import { useAuth } from "@/context/AuthContext";
 import { auth } from "@/lib/firestore/firebase";
 import { Button } from "@heroui/react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
@@ -69,11 +68,15 @@ function SignInWithGoogleComponent() {
   const handleLogin = async () => {
     setIsLoading(true);
     try {
-        const user = await signInWithPopup(auth, new GoogleAuthProvider());
-        } catch (error) {
-          toast.error(error.message);
-        }
-        setIsLoading(false);
+      const user = await signInWithPopup(auth, new GoogleAuthProvider());
+    } catch (error) {
+      toast.error(error.message);
+    }
+    setIsLoading(false);
   };
-  return <Button isLoading={isLoading} isDisabled={isLoading} onClick={handleLogin}>Sign in with Google</Button>;
+  return (
+    <Button isLoading={isLoading} isDisabled={isLoading} onClick={handleLogin}>
+      Sign in with Google
+    </Button>
+  );
 }
