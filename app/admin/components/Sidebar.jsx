@@ -6,6 +6,7 @@ import {
   CircleUserRound,
   Folders,
   LayoutDashboard,
+  ShieldCheck,
   ShoppingCart,
   StarHalf,
   SwatchBook,
@@ -59,6 +60,11 @@ export default function Sidebar() {
       link: "/admin/collections",
       icon: <SwatchBook />,
     },
+    //  {
+    //   name: "َAdmins",
+    //   link: "/admin/َadmins",
+    //   icon: <ShieldCheck />,
+    // },
   ];
   return (
     <section className="bg-white border-r px-5 py-3 h-screen overflow-hidden flex flex-col gap-10 w-[260px]">
