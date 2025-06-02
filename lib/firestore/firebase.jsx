@@ -14,7 +14,7 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
-const app = getApps().length === 0  ?  initializeApp(firebaseConfig) : getApps()gi;
+const app = getApps().length === 0  ?  initializeApp(firebaseConfig) : getApps();
  export const analytics = isSupported().then((yes) => yes ? getAnalytics(app) : null) ; 
 
  export const db = getFirestore(app);
