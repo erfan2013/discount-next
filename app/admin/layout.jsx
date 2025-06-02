@@ -19,7 +19,7 @@ function AdminChcking({children}){
   const {user, isLoading} = useAuth()
   const router = useRouter()
   useEffect(() => {
-    if(!user && isLoading){
+    if(user && isLoading){
       router.push("/login")
     }
   } ,[user , isLoading])
